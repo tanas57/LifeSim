@@ -56,10 +56,10 @@ namespace Project3___LifeSim
                     Console.Write("(Yes-'Y' / No-'N') : "); // ask to user
                 }
                 // there is not saved file, create empty board
-                else Console.Write("    Welcome to the LifeSim \n                   Press any key to contunie to simulation...");
+                else Console.Write("    Welcome to the LifeSim \n                   Press any key to continues to simulation...");
             }
             // save file does not found, create empty board
-            else { Console.Write("  Welcome to the LifeSim \n                   Press any key to contunie to simulation..."); ClearScreen(); }
+            else { Console.Write("  Welcome to the LifeSim \n                   Press any key to continues to simulation..."); ClearScreen(); }
             if (val) // is there saved data ?
             {
                 while (true)
@@ -132,7 +132,7 @@ namespace Project3___LifeSim
                 if (Console.KeyAvailable)
                 {
                     ConsoleKeyInfo key = Console.ReadKey(true); // Get a key from user
-                    save = true; // contunies to save
+                    save = true; // continues to save
                     switch (key.Key)
                     {
                         case ConsoleKey.Q: Locate('q'); break;  // Locate Particle-Q
